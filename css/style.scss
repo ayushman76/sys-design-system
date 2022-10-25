@@ -1,0 +1,13 @@
+.sys-btn-outline-accent, .sys-btn-outline-warning{
+    color: black;
+    text-align: center;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.sys-btn-outline-warning{
+    border: 1px solid orange;
+}
