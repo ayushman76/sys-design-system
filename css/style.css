@@ -1,5 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.sys-btn-outline-accent {
+  color: black;
+  text-align: center;
+  outline: none;
+  padding: 10px 20px;
+  border: 1px solid orange;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
