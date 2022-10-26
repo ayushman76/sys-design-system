@@ -12,6 +12,18 @@
   border: 1px solid #304FFE;
 }
 
+.sys-btn-outline-disable {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: none;
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  color: rgba(102, 102, 102, 0.86);
+  border: 1px solid rgba(102, 102, 102, 0.86);
+}
+
 .sys-btn-outline-accent:hover {
   background-color: rgba(0, 38, 202, 0.19);
   box-shadow: 0px 4px 10px -1px rgba(0, 38, 202, 0.19);
@@ -74,13 +86,13 @@
 }
 .dark-theme .sys-btn-outline-accent:hover {
   background-color: rgba(0, 38, 202, 0.19);
-  box-shadow: 0px 4px 10px -1px rgba(0, 38, 202, 0.19);
+  box-shadow: 0px 4px 10px 0px rgba(0, 38, 202, 0.19);
   transition: 0.2s;
 }
 .dark-theme .sys-btn-outline-accent:focus {
   background-color: #304FFE;
   border: 1px solid white;
-  box-shadow: 0px 4px 10px -1px rgba(0, 38, 202, 0.19);
+  box-shadow: 0px 4px 10px 0px rgba(0, 38, 202, 0.19);
   transition: 0.2s;
   color: white;
 }
@@ -89,13 +101,13 @@
 }
 .dark-theme .sys-btn-outline-alert:hover {
   background-color: rgba(197, 157, 57, 0.19);
-  box-shadow: 0px 4px 10px -1px rgba(197, 157, 57, 0.19);
+  box-shadow: 0px 4px 10px 0px rgba(197, 157, 57, 0.19);
   transition: 0.2s;
 }
 .dark-theme .sys-btn-outline-alert:focus {
   background-color: #FFB800;
   border: 1px solid white;
-  box-shadow: 0px 4px 10px -1px rgba(197, 157, 57, 0.19);
+  box-shadow: 0px 4px 10px 0px rgba(197, 157, 57, 0.19);
   transition: 0.2s;
   color: white;
 }
@@ -104,13 +116,13 @@
 }
 .dark-theme .sys-btn-outline-olive:hover {
   background-color: rgba(44, 148, 35, 0.19);
-  box-shadow: 0px 4px 10px -1px rgba(44, 148, 35, 0.19);
+  box-shadow: 0px 4px 10px 0px rgba(44, 148, 35, 0.19);
   transition: 0.2s;
 }
 .dark-theme .sys-btn-outline-olive:focus {
   background-color: #5FD855;
   border: 1px solid white;
-  box-shadow: 0px 4px 10px -1px rgba(44, 148, 35, 0.19);
+  box-shadow: 0px 4px 10px 0px rgba(44, 148, 35, 0.19);
   transition: 0.2s;
   color: white;
 }/*# sourceMappingURL=style.css.map */

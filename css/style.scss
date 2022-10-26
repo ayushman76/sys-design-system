@@ -1,6 +1,7 @@
 // accents
 $accent-19:rgb(0, 38, 202, 19%);
 $accent-100:#304FFE;
+$disable-100:rgba(102, 102, 102, 0.86);
 
 // Olive
 $olive-100:#5FD855;
@@ -24,11 +25,25 @@ $dark:#000000;
     text-align: center;
     outline: none;
 }
+@mixin disable-outline-button{
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    pointer-events: none;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    color: $disable-100;
+    border: 1px solid $disable-100;
+}
 .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive{
     @include outline-button();
 }
 .sys-btn-outline-accent{
     border: 1px solid $accent-100;
+}
+.sys-btn-outline-disable{
+   @include disable-outline-button(); 
 }
 // hover state 
 .sys-btn-outline-accent:hover{
