@@ -1,13 +1,132 @@
-.sys-btn-outline-accent, .sys-btn-outline-warning{
-    color: black;
-    text-align: center;
-    outline: none;
+// accents
+$accent-19:rgb(0, 38, 202, 19%);
+$accent-100:#304FFE;
+
+// Olive
+$olive-100:#5FD855;
+$olive-19:rgb(44, 148, 35, 19%);
+
+// alerts
+$alert-100:#FFB800;
+$alert-19:rgb(197, 157, 57, 19%);
+
+// dark
+$dark:#000000;
+
+// Default theme
+
+@mixin outline-button{
+    color: $dark;
     padding: 10px 20px;
-    border: 1px solid blue;
     border-radius: 4px;
     background-color: transparent;
     cursor: pointer;
+    text-align: center;
+    outline: none;
 }
-.sys-btn-outline-warning{
-    border: 1px solid orange;
+.sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive{
+    @include outline-button();
+}
+.sys-btn-outline-accent{
+    border: 1px solid $accent-100;
+}
+// hover state 
+.sys-btn-outline-accent:hover{
+    background-color: $accent-19;
+    box-shadow: 0px 4px 10px -1px $accent-19;
+    transition: 0.2s;
+}
+.sys-btn-outline-accent:focus{
+    background-color: $accent-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $accent-19;
+    transition: 0.2s;
+    color: white;
+}
+.sys-btn-outline-alert{
+    border: 1px solid #FFB800;
+}
+.sys-btn-outline-alert:hover{
+    background-color: $alert-19;
+    box-shadow: 0px 4px 10px -1px $alert-19;
+    transition: 0.2s;
+}
+.sys-btn-outline-alert:focus{
+    background-color: $alert-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $alert-19;
+    transition: 0.2s;
+    color: white;
+}
+.sys-btn-outline-olive{
+    border: 1px solid $olive-100;
+}
+.sys-btn-outline-olive:hover{
+    background-color: $olive-19;
+    box-shadow: 0px 4px 10px -1px $olive-19;
+    transition: 0.2s;
+}
+.sys-btn-outline-olive:focus{
+    background-color: $olive-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $olive-19;
+    transition: 0.2s;
+    color: white;
+}
+
+.dark-theme{
+    background-color: $dark;
+    color: white;
+    @mixin dark-outline-button{
+        color: white;
+    }
+    .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive{
+        @include dark-outline-button();
+    }
+    .sys-btn-outline-accent{
+        border: 1px solid $accent-100;
+    }
+    // hover state 
+    .sys-btn-outline-accent:hover{
+        background-color: $accent-19;
+        box-shadow: 0px 4px 10px 0px $accent-19;
+        transition: 0.2s;
+    }
+    .sys-btn-outline-accent:focus{
+        background-color: $accent-100;
+        border: 1px solid white;
+        box-shadow: 0px 4px 10px 0px $accent-19;
+        transition: 0.2s;
+        color: white;
+    }
+    .sys-btn-outline-alert{
+        border: 1px solid #FFB800;
+    }
+    .sys-btn-outline-alert:hover{
+        background-color: $alert-19;
+        box-shadow: 0px 4px 10px 0px $alert-19;
+        transition: 0.2s;
+    }
+    .sys-btn-outline-alert:focus{
+        background-color: $alert-100;
+        border: 1px solid white;
+        box-shadow: 0px 4px 10px 0px $alert-19;
+        transition: 0.2s;
+        color: white;
+    }
+    .sys-btn-outline-olive{
+        border: 1px solid $olive-100;
+    }
+    .sys-btn-outline-olive:hover{
+        background-color: $olive-19;
+        box-shadow: 0px 4px 10px 0px $olive-19;
+        transition: 0.2s;
+    }
+    .sys-btn-outline-olive:focus{
+        background-color: $olive-100;
+        border: 1px solid white;
+        box-shadow: 0px 4px 10px 0px $olive-19;
+        transition: 0.2s;
+        color: white;
+    }
 }
