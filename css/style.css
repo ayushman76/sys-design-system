@@ -1,4 +1,4 @@
-.sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error {
+.sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary {
   color: #000000;
   padding: 10px 20px;
   border-radius: 4px;
@@ -14,6 +14,10 @@
 
 .sys-btn-outline-error {
   border: 1px solid #C73E1D;
+}
+
+.sys-btn-outline-secondary {
+  border: 1px solid #6c757d;
 }
 
 .sys-btn-outline-disable {
@@ -38,6 +42,20 @@
   background-color: #304FFE;
   border: 1px solid white;
   box-shadow: 0px 4px 10px -1px rgba(0, 38, 202, 0.19);
+  transition: 0.2s;
+  color: white;
+}
+
+.sys-btn-outline-secondary:hover {
+  background-color: rgba(108, 117, 125, 0.19);
+  box-shadow: 0px 4px 10px -1px #6c757d;
+  transition: 0.2s;
+}
+
+.sys-btn-outline-secondary:focus {
+  background-color: #6c757d;
+  border: 1px solid white;
+  box-shadow: 0px 4px 10px -1px rgba(108, 117, 125, 0.19);
   transition: 0.2s;
   color: white;
 }
@@ -92,7 +110,7 @@
   color: white;
 }
 
-.sys-btn-accent, .sys-btn-olive, .sys-btn-alert, .sys-btn-error {
+.sys-btn-accent, .sys-btn-olive, .sys-btn-alert, .sys-btn-error, .sys-btn-secondary {
   color: #000000;
   padding: 10px 20px;
   border-radius: 4px;
@@ -118,6 +136,10 @@
 
 .sys-btn-error {
   background-color: #C73E1D;
+}
+
+.sys-btn-secondary {
+  background-color: #6c757d;
 }
 
 .sys-btn-accent:hover {
@@ -180,11 +202,26 @@
   color: white;
 }
 
+.sys-btn-secondary:hover {
+  background-color: rgba(108, 117, 125, 0.19);
+  box-shadow: 0px 4px 10px -1px rgba(108, 117, 125, 0.19);
+  transition: 0.2s;
+  border: 1px solid #6c757d;
+}
+
+.sys-btn-secondary:focus {
+  background-color: #6c757d;
+  border: 1px solid white;
+  box-shadow: 0px 4px 10px -1px rgba(108, 117, 125, 0.19);
+  transition: 0.2s;
+  color: white;
+}
+
 .dark-theme {
   background-color: #000000;
   color: white;
 }
-.dark-theme .sys-btn-outline-accent, .dark-theme .sys-btn-outline-alert, .dark-theme .sys-btn-outline-olive, .dark-theme .sys-btn-outline-error {
+.dark-theme .sys-btn-outline-accent, .dark-theme .sys-btn-outline-alert, .dark-theme .sys-btn-outline-olive, .dark-theme .sys-btn-outline-error, .dark-theme .sys-btn-outline-secondary {
   color: white;
 }
 .dark-theme .sys-btn-outline-accent {
