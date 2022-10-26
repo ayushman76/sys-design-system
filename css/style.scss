@@ -11,10 +11,14 @@ $olive-19:rgb(44, 148, 35, 19%);
 $alert-100:#FFB800;
 $alert-19:rgb(197, 157, 57, 19%);
 
+// error
+$error-100:#C73E1D;
+$error-19:rgb(199, 62, 29, 19%);
+
 // dark
 $dark:#000000;
 
-// Default theme
+// Default theme Exploration
 
 @mixin outline-button{
     color: $dark;
@@ -25,6 +29,10 @@ $dark:#000000;
     text-align: center;
     outline: none;
 }
+@mixin standard-button{
+    @include outline-button();
+}
+
 @mixin disable-outline-button{
     padding: 10px 20px;
     border-radius: 4px;
@@ -36,15 +44,19 @@ $dark:#000000;
     color: $disable-100;
     border: 1px solid $disable-100;
 }
-.sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive{
+.sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error{
     @include outline-button();
 }
 .sys-btn-outline-accent{
     border: 1px solid $accent-100;
 }
+.sys-btn-outline-error{
+    border: 1px solid $error-100;
+}
 .sys-btn-outline-disable{
    @include disable-outline-button(); 
 }
+
 // hover state 
 .sys-btn-outline-accent:hover{
     background-color: $accent-19;
@@ -89,13 +101,105 @@ $dark:#000000;
     color: white;
 }
 
+.sys-btn-outline-error:hover{
+    background-color: $error-19;
+    box-shadow: 0px 4px 10px -1px $error-19;
+    transition: 0.2s;
+}
+.sys-btn-outline-error:focus{
+    background-color: $error-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $error-19;
+    transition: 0.2s;
+    color: white;
+}
+
+
+// standard button
+.sys-btn-accent, .sys-btn-olive, .sys-btn-alert, .sys-btn-error{
+    @include standard-button();
+    border: none;
+    color: white;
+}
+
+.sys-btn-accent{
+    background-color: $accent-100;
+}
+
+.sys-btn-olive{
+    background-color: $olive-100;
+}
+.sys-btn-alert{
+    background-color: $alert-100;
+}
+.sys-btn-error{
+    background-color: $error-100;
+}
+
+.sys-btn-accent:hover{
+    background-color: $accent-19;
+    box-shadow: 0px 4px 10px -1px $accent-19;
+    transition: 0.2s;
+    border: 1px solid $accent-100;
+}
+.sys-btn-accent:focus{
+    background-color: $accent-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $accent-19;
+    transition: 0.2s;
+    color: white;
+}
+
+.sys-btn-alert:hover{
+    background-color: $alert-19;
+    box-shadow: 0px 4px 10px -1px $alert-19;
+    transition: 0.2s;
+    border: 1px solid $alert-100;
+}
+.sys-btn-alert:focus{
+    background-color: $alert-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $alert-19;
+    transition: 0.2s;
+    color: white;
+}
+
+.sys-btn-olive:hover{
+    background-color: $olive-19;
+    box-shadow: 0px 4px 10px -1px $olive-19;
+    transition: 0.2s;
+    border: 1px solid $olive-100;
+}
+.sys-btn-olive:focus{
+    background-color: $olive-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $olive-19;
+    transition: 0.2s;
+    color: white;
+}
+
+.sys-btn-error:hover{
+    background-color: $error-19;
+    box-shadow: 0px 4px 10px -1px $error-19;
+    transition: 0.2s;
+    border: 1px solid $error-100;
+}
+.sys-btn-error:focus{
+    background-color: $error-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $error-19;
+    transition: 0.2s;
+    color: white;
+}
+
+// dark theme eploraton
 .dark-theme{
     background-color: $dark;
     color: white;
     @mixin dark-outline-button{
         color: white;
     }
-    .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive{
+    .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error{
         @include dark-outline-button();
     }
     .sys-btn-outline-accent{
