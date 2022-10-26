@@ -15,6 +15,10 @@ $alert-19:rgb(197, 157, 57, 19%);
 $error-100:#C73E1D;
 $error-19:rgb(199, 62, 29, 19%);
 
+// secondary
+$secondary-100:#6c757d;
+$secondary-19:rgb(108, 117, 125, 19%);
+
 // dark
 $dark:#000000;
 
@@ -44,7 +48,7 @@ $dark:#000000;
     color: $disable-100;
     border: 1px solid $disable-100;
 }
-.sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error{
+.sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary{
     @include outline-button();
 }
 .sys-btn-outline-accent{
@@ -52,6 +56,9 @@ $dark:#000000;
 }
 .sys-btn-outline-error{
     border: 1px solid $error-100;
+}
+.sys-btn-outline-secondary{
+    border: 1px solid $secondary-100;
 }
 .sys-btn-outline-disable{
    @include disable-outline-button(); 
@@ -67,6 +74,18 @@ $dark:#000000;
     background-color: $accent-100;
     border: 1px solid white;
     box-shadow: 0px 4px 10px -1px $accent-19;
+    transition: 0.2s;
+    color: white;
+}
+.sys-btn-outline-secondary:hover{
+    background-color: $secondary-19;
+    box-shadow: 0px 4px 10px -1px $secondary-100;
+    transition: 0.2s;
+}
+.sys-btn-outline-secondary:focus{
+    background-color: $secondary-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $secondary-19;
     transition: 0.2s;
     color: white;
 }
@@ -116,7 +135,7 @@ $dark:#000000;
 
 
 // standard button
-.sys-btn-accent, .sys-btn-olive, .sys-btn-alert, .sys-btn-error{
+.sys-btn-accent, .sys-btn-olive, .sys-btn-alert, .sys-btn-error, .sys-btn-secondary{
     @include standard-button();
     border: none;
     color: white;
@@ -134,6 +153,9 @@ $dark:#000000;
 }
 .sys-btn-error{
     background-color: $error-100;
+}
+.sys-btn-secondary{
+    background-color: $secondary-100;
 }
 
 .sys-btn-accent:hover{
@@ -192,6 +214,20 @@ $dark:#000000;
     color: white;
 }
 
+.sys-btn-secondary:hover{
+    background-color: $secondary-19;
+    box-shadow: 0px 4px 10px -1px $secondary-19;
+    transition: 0.2s;
+    border: 1px solid $secondary-100;
+}
+.sys-btn-secondary:focus{
+    background-color: $secondary-100;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px -1px $secondary-19;
+    transition: 0.2s;
+    color: white;
+}
+
 // dark theme eploraton
 .dark-theme{
     background-color: $dark;
@@ -199,7 +235,7 @@ $dark:#000000;
     @mixin dark-outline-button{
         color: white;
     }
-    .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error{
+    .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary{
         @include dark-outline-button();
     }
     .sys-btn-outline-accent{
