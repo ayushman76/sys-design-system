@@ -39,6 +39,14 @@ $dark:#000000;
     text-align: center;
     outline: none;
 }
+
+[size="lg"]{
+    padding: 12px 32px !important;
+}
+[size="sm"]{
+    padding: 10px 8px !important;
+}
+
 @mixin standard-button{
     @include outline-button();
 }
@@ -138,7 +146,6 @@ $dark:#000000;
     transition: 0.2s;
     color: white;
 }
-
 
 // standard button
 .sys-btn-accent, .sys-btn-olive, .sys-btn-alert, .sys-btn-error, .sys-btn-secondary{

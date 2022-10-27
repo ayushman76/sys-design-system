@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+[size=lg] {
+  padding: 12px 32px !important;
+}
+
+[size=sm] {
+  padding: 10px 8px !important;
+}
+
 .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary {
   color: #000000;
   padding: 10px 20px;
