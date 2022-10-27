@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary {
   color: #000000;
   padding: 10px 20px;
