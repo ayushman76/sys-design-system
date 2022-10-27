@@ -5,11 +5,14 @@
 }
 
 [size=lg] {
-  padding: 12px 32px !important;
+  width: 130px !important;
+  padding: 12px 0px !important;
 }
 
 [size=sm] {
-  padding: 10px 8px !important;
+  width: auto !important;
+  font-size: x-small;
+  padding: 8px 10px !important;
 }
 
 .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary {
@@ -20,6 +23,9 @@
   cursor: pointer;
   text-align: center;
   outline: none;
+  max-width: 100%;
+  width: auto;
+  white-space: nowrap;
 }
 
 .sys-btn-outline-accent {
@@ -44,6 +50,9 @@
   background-color: transparent;
   color: rgba(102, 102, 102, 0.86);
   border: 1px solid rgba(102, 102, 102, 0.86);
+  width: 108px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .sys-btn-outline-accent:hover {
@@ -132,6 +141,9 @@
   cursor: pointer;
   text-align: center;
   outline: none;
+  max-width: 100%;
+  width: auto;
+  white-space: nowrap;
   border: none;
   color: white;
 }

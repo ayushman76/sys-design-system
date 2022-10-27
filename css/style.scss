@@ -38,13 +38,19 @@ $dark:#000000;
     cursor: pointer;
     text-align: center;
     outline: none;
+    max-width: 100%;
+    width: auto;
+    white-space: nowrap;
 }
 
 [size="lg"]{
-    padding: 12px 32px !important;
+    width: 130px !important;
+    padding: 12px 0px !important;
 }
 [size="sm"]{
-    padding: 10px 8px !important;
+    width: auto !important;
+    font-size: x-small;
+    padding: 8px 10px !important;
 }
 
 @mixin standard-button{
@@ -61,6 +67,9 @@ $dark:#000000;
     background-color: transparent;
     color: $disable-100;
     border: 1px solid $disable-100;
+    width: 108px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary{
     @include outline-button();
