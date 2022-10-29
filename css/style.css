@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+[sys-icon=home] {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
 [size=lg] {
   width: 130px !important;
   padding: 12px 0px !important;
@@ -53,6 +62,22 @@
   width: 108px;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.sys-btn-disable {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  pointer-events: none;
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  color: rgba(102, 102, 102, 0.86);
+  border: 1px solid rgba(102, 102, 102, 0.86);
+  width: 108px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #6c757d;
 }
 
 .sys-btn-outline-accent:hover {
@@ -131,6 +156,23 @@
   box-shadow: 0px 4px 10px -1px rgba(199, 62, 29, 0.19);
   transition: 0.2s;
   color: white;
+}
+
+.sys-btn-group {
+  display: inline-flex;
+}
+.sys-btn-group :first-child {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+.sys-btn-group :last-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.sys-btn-group :not(:last-child) {
+  border-radius: 0px;
 }
 
 .sys-btn-accent, .sys-btn-olive, .sys-btn-alert, .sys-btn-error, .sys-btn-secondary {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SYS Design System</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="dark-theme">
    <div class="outline-variant">
@@ -29,14 +30,12 @@
             Sys Button
         </button>  
    </div>
-
+   
     <div class="size-variant">
         <h1>Button Sizes (lg, md(default), sm)</h1>
         <div class="lg">
-            <h3>Default Button or Medium Button
-
-            </h3>
-            <button type="button" role="btn" class="sys-btn-accent">
+            <h3>Default Button or Medium Button</h3>
+            <button type="button" sys-icon="home" role="btn" class="sys-btn-accent">
                 Sys md Button
             </button>
         </div>
@@ -53,6 +52,29 @@
             </button>
         </div>
     </div>
+
+    <div class="standard-variant">
+        <h1>Sys Button Group</h1>
+        
+        <div class="sys-btn-group">
+            <button type="button" role="btn" class="sys-btn-accent">
+                Sys Button
+            </button>
+            <button type="button" role="btn" class="sys-btn-outline-accent">
+                Sys Button
+            </button>
+            <button type="button" role="btn" class="sys-btn-accent">
+                Sys Button
+            </button>
+            <button type="button" role="btn" class="sys-btn-olive">
+                Sys Button
+            </button>
+            <button type="button" role="btn" class="sys-btn-disable">
+                Sys Button
+            </button>
+        </div>
+    </div>
+
 
    <div class="standard-variant">
         <h1>Standard Button</h1>
@@ -73,5 +95,6 @@
         </button> 
    </div>
 
+   <script src="app.js"></script>
 </body>
 </html>
