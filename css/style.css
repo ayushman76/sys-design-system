@@ -64,6 +64,9 @@
 .sys-switch-olive .sys-slider.round:before {
   border-radius: 50%;
 }
+.sys-switch-olive input:disabled + .sys-slider {
+  opacity: 0.6;
+}
 .sys-switch-olive input:checked + .sys-slider {
   background-color: #5FD855;
 }
@@ -107,6 +110,9 @@
 }
 .sys-switch-accent .sys-slider.round:before {
   border-radius: 50%;
+}
+.sys-switch-accent input:disabled + .sys-slider {
+  opacity: 0.6;
 }
 .sys-switch-accent input:checked + .sys-slider {
   background-color: #304FFE;
@@ -152,6 +158,9 @@
 .sys-switch-error .sys-slider.round:before {
   border-radius: 50%;
 }
+.sys-switch-error input:disabled + .sys-slider {
+  opacity: 0.6;
+}
 .sys-switch-error input:checked + .sys-slider {
   background-color: #C73E1D;
 }
@@ -196,6 +205,9 @@
 .sys-switch-alert .sys-slider.round:before {
   border-radius: 50%;
 }
+.sys-switch-alert input:disabled + .sys-slider {
+  opacity: 0.6;
+}
 .sys-switch-alert input:checked + .sys-slider {
   background-color: #FFB800;
 }
@@ -239,6 +251,9 @@
 }
 .sys-switch-secondary .sys-slider.round:before {
   border-radius: 50%;
+}
+.sys-switch-secondary input:disabled + .sys-slider {
+  opacity: 0.6;
 }
 .sys-switch-secondary input:checked + .sys-slider {
   background-color: #6c757d;

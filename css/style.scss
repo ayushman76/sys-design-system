@@ -153,6 +153,9 @@ $dark:#000000;
     .sys-slider.round:before {
         border-radius: 50%;
     }
+    input:disabled + .sys-slider{
+        opacity: .6;
+    }
 }
 .sys-switch-olive{
     @include rounded-sys-switch();
