@@ -155,6 +155,16 @@ $gray:#292929;
     @include badge;
     border: none;
 }
+
+.sys-standard-badge{
+    @include badge;
+    border: none;
+}
+.sys-outline-badge{
+    @include badge;
+    border: 1px solid;
+}
+
 .sys-pin-basic-badge{
     @include badge;
     border:none;
@@ -187,7 +197,31 @@ $gray:#292929;
     border-color: $secondary-100;
 }
 
-.sys-pin-badge{
+.sys-outline-badge{
+    
+    .badge-accent{
+        color:$accent-100;
+        border-color: $accent-100;
+    }
+    .badge-alert{
+        color:$alert-100 ;
+        border-color: $alert-100;
+    }
+    .badge-olive{
+        color:$olive-100 ;
+        border-color: $olive-100;
+    }
+    .badge-error{
+        color: $error-100;
+        border-color: $error-100;
+    }
+    .badge-secondary{
+        color: $secondary-100;
+        border-color: $secondary-100;
+    }
+}
+
+.sys-pin-badge, .sys-standard-badge{
     color: white;
     &.badge-accent{
        background-color: $accent-100;
@@ -208,6 +242,8 @@ $gray:#292929;
         margin-right: 6px;
     }
 }
+
+
 
 
 

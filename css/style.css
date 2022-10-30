@@ -21,6 +21,24 @@
   border: none;
 }
 
+.sys-standard-badge {
+  padding: 3px 10px;
+  width: auto;
+  font-size: 13px;
+  border-radius: 15px;
+  border: 1px solid;
+  border: none;
+}
+
+.sys-outline-badge {
+  padding: 3px 10px;
+  width: auto;
+  font-size: 13px;
+  border-radius: 15px;
+  border: 1px solid;
+  border: 1px solid;
+}
+
 .sys-pin-basic-badge {
   padding: 3px 10px;
   width: auto;
@@ -63,25 +81,46 @@
   border-color: #6c757d;
 }
 
-.sys-pin-badge {
+.sys-outline-badge .badge-accent {
+  color: #304FFE;
+  border-color: #304FFE;
+}
+.sys-outline-badge .badge-alert {
+  color: #FFB800;
+  border-color: #FFB800;
+}
+.sys-outline-badge .badge-olive {
+  color: #5FD855;
+  border-color: #5FD855;
+}
+.sys-outline-badge .badge-error {
+  color: #C73E1D;
+  border-color: #C73E1D;
+}
+.sys-outline-badge .badge-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.sys-pin-badge, .sys-standard-badge {
   color: white;
 }
-.sys-pin-badge.badge-accent {
+.sys-pin-badge.badge-accent, .sys-standard-badge.badge-accent {
   background-color: #304FFE;
 }
-.sys-pin-badge.badge-alert {
+.sys-pin-badge.badge-alert, .sys-standard-badge.badge-alert {
   background-color: #FFB800;
 }
-.sys-pin-badge.badge-olive {
+.sys-pin-badge.badge-olive, .sys-standard-badge.badge-olive {
   background-color: #5FD855;
 }
-.sys-pin-badge.badge-error {
+.sys-pin-badge.badge-error, .sys-standard-badge.badge-error {
   background-color: #C73E1D;
 }
-.sys-pin-badge.badge-secondary {
+.sys-pin-badge.badge-secondary, .sys-standard-badge.badge-secondary {
   background-color: #6c757d;
 }
-.sys-pin-badge i {
+.sys-pin-badge i, .sys-standard-badge i {
   margin-right: 6px;
 }
 
