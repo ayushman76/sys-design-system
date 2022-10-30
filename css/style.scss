@@ -151,6 +151,10 @@ $gray:#292929;
 .sys-pin-outline-badge{
     @include badge;
 }
+.sys-pin-badge{
+    @include badge;
+    border: none;
+}
 .sys-pin-basic-badge{
     @include badge;
     border:none;
@@ -181,6 +185,23 @@ $gray:#292929;
 .badge-secondary{
     color: $secondary-100;
     border-color: $secondary-100;
+}
+.sys-pin-badge{
+    &.badge-accent{
+       background-color: $accent-19;
+    }
+    &.badge-alert{
+        background-color: $alert-19;
+    }
+    &.badge-olive{
+        background-color: $olive-19;
+    }
+    &.badge-error{
+        background-color: $error-19;
+    }
+    &.badge-secondary{
+        background-color: $secondary-19;
+    }
 }
 
 // 
