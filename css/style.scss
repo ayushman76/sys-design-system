@@ -186,6 +186,7 @@ $gray:#292929;
     color: $secondary-100;
     border-color: $secondary-100;
 }
+
 .sys-pin-badge{
     &.badge-accent{
        background-color: $accent-19;
@@ -202,7 +203,12 @@ $gray:#292929;
     &.badge-secondary{
         background-color: $secondary-19;
     }
+    i{
+        margin-right: 6px;
+    }
 }
+
+
 
 // 
 

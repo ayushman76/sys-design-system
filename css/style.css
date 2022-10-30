@@ -78,6 +78,9 @@
 .sys-pin-badge.badge-secondary {
   background-color: rgba(108, 117, 125, 0.19);
 }
+.sys-pin-badge i {
+  margin-right: 6px;
+}
 
 .sys-elevation {
   padding: 1rem;
