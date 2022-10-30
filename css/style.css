@@ -63,20 +63,23 @@
   border-color: #6c757d;
 }
 
+.sys-pin-badge {
+  color: white;
+}
 .sys-pin-badge.badge-accent {
-  background-color: rgba(0, 38, 202, 0.19);
+  background-color: #304FFE;
 }
 .sys-pin-badge.badge-alert {
-  background-color: rgba(197, 157, 57, 0.19);
+  background-color: #FFB800;
 }
 .sys-pin-badge.badge-olive {
-  background-color: rgba(44, 148, 35, 0.19);
+  background-color: #5FD855;
 }
 .sys-pin-badge.badge-error {
-  background-color: rgba(199, 62, 29, 0.19);
+  background-color: #C73E1D;
 }
 .sys-pin-badge.badge-secondary {
-  background-color: rgba(108, 117, 125, 0.19);
+  background-color: #6c757d;
 }
 .sys-pin-badge i {
   margin-right: 6px;

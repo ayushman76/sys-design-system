@@ -188,20 +188,21 @@ $gray:#292929;
 }
 
 .sys-pin-badge{
+    color: white;
     &.badge-accent{
-       background-color: $accent-19;
+       background-color: $accent-100;
     }
     &.badge-alert{
-        background-color: $alert-19;
+        background-color: $alert-100;
     }
     &.badge-olive{
-        background-color: $olive-19;
+        background-color: $olive-100;
     }
     &.badge-error{
-        background-color: $error-19;
+        background-color: $error-100;
     }
     &.badge-secondary{
-        background-color: $secondary-19;
+        background-color: $secondary-100;
     }
     i{
         margin-right: 6px;
