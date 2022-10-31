@@ -42,7 +42,11 @@ $gray:#292929;
     max-width: 100%;
     width: auto;
     white-space: nowrap;
+    text-decoration: none;
+    display: inline-block
+
 }
+
 
 @mixin standard-button{
     @include outline-button();
@@ -148,6 +152,7 @@ $gray:#292929;
     border-radius: 15px;
     border:1px solid;
 }
+
 .sys-pin-outline-badge{
     @include badge;
 }
@@ -274,11 +279,12 @@ $gray:#292929;
     margin: 10px;
     .elevation-title{
         color:white;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .elevation-content{
         color:white;
         line-height: 20px;
+        margin-bottom: 10px;
     } 
 }
 
@@ -359,7 +365,7 @@ $gray:#292929;
 }
 
 .sys-btn-outline-accent, .sys-btn-outline-alert, .sys-btn-outline-olive, .sys-btn-outline-error, .sys-btn-outline-secondary{
-    @include outline-button();
+    @include outline-button();    
 }
 .sys-btn-outline-accent{
     border: 1px solid $accent-100;

@@ -488,6 +488,8 @@
   max-width: 100%;
   width: auto;
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .sys-btn-outline-accent {
@@ -639,6 +641,8 @@
   max-width: 100%;
   width: auto;
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
   border: none;
   color: white;
 }
@@ -799,11 +803,12 @@
 }
 .dark-theme .sys-elevation .elevation-title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .dark-theme .sys-elevation .elevation-content {
   color: white;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 .dark-theme .sys-elevation-v1 {
   padding: 1rem;
@@ -815,11 +820,12 @@
 }
 .dark-theme .sys-elevation-v1 .elevation-title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .dark-theme .sys-elevation-v1 .elevation-content {
   color: white;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 .dark-theme .sys-elevation-v2 {
   padding: 1rem;
@@ -831,11 +837,12 @@
 }
 .dark-theme .sys-elevation-v2 .elevation-title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .dark-theme .sys-elevation-v2 .elevation-content {
   color: white;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 .dark-theme .sys-elevation-v3 {
   padding: 1rem;
@@ -847,11 +854,12 @@
 }
 .dark-theme .sys-elevation-v3 .elevation-title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .dark-theme .sys-elevation-v3 .elevation-content {
   color: white;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 .dark-theme .sys-elevation-v4 {
   padding: 1rem;
@@ -863,11 +871,12 @@
 }
 .dark-theme .sys-elevation-v4 .elevation-title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .dark-theme .sys-elevation-v4 .elevation-content {
   color: white;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 .dark-theme .sys-elevation-v5 {
   padding: 1rem;
@@ -879,9 +888,10 @@
 }
 .dark-theme .sys-elevation-v5 .elevation-title {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .dark-theme .sys-elevation-v5 .elevation-content {
   color: white;
   line-height: 20px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
