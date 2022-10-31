@@ -134,11 +134,12 @@
 }
 .sys-elevation .elevation-title {
   color: #303030;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .sys-elevation .elevation-content {
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .sys-elevation-v1 {
@@ -152,11 +153,12 @@
 }
 .sys-elevation-v1 .elevation-title {
   color: #303030;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .sys-elevation-v1 .elevation-content {
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .sys-elevation-v2 {
@@ -170,11 +172,12 @@
 }
 .sys-elevation-v2 .elevation-title {
   color: #303030;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .sys-elevation-v2 .elevation-content {
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .sys-elevation-v3 {
@@ -188,11 +191,12 @@
 }
 .sys-elevation-v3 .elevation-title {
   color: #303030;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .sys-elevation-v3 .elevation-content {
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .sys-elevation-v4 {
@@ -206,11 +210,12 @@
 }
 .sys-elevation-v4 .elevation-title {
   color: #303030;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .sys-elevation-v4 .elevation-content {
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .sys-elevation-v5 {
@@ -224,11 +229,12 @@
 }
 .sys-elevation-v5 .elevation-title {
   color: #303030;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 .sys-elevation-v5 .elevation-content {
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 [size=lg] {
