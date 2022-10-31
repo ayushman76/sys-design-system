@@ -303,6 +303,9 @@ $gray:#292929;
     }
     .sys-card-header{
         font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .sys-card-body{
         width: 100%;
@@ -317,6 +320,7 @@ $gray:#292929;
         border-top: 1px solid white;
         padding: 8px 10px;
     }
+
    
 }
 

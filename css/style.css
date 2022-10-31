@@ -139,6 +139,9 @@
 }
 .sys-card .sys-card-header {
   font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .sys-card .sys-card-body {
   width: 100%;
