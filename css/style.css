@@ -124,6 +124,31 @@
   margin-right: 6px;
 }
 
+.sys-card {
+  width: 18rem;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+}
+.sys-card .sys-card-header, .sys-card .sys-card-body, .sys-card .sys-card-footer {
+  padding: 0.9rem;
+}
+.sys-card .sys-card-header {
+  font-size: 1rem;
+}
+.sys-card .sys-card-body {
+  width: 100%;
+  height: 78px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.sys-card .sys-card-footer {
+  border-top: 1px solid white;
+  padding: 8px 10px;
+}
+
 .sys-elevation {
   padding: 1rem;
   border-radius: 4px;
