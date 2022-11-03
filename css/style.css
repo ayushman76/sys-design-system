@@ -780,6 +780,24 @@
   color: white;
 }
 
+[size=lg].sys-outline-checkbox .checkmark, [size=lg].sys-checkbox .checkmark {
+  padding: 5px 13px !important;
+}
+
+[size=sm].sys-outline-checkbox .checkmark, [size=sm].sys-checkbox .checkmark {
+  padding: 0px 9px !important;
+  font-size: initial;
+}
+[size=sm].sys-checkbox .checkmark:after, [size=sm].sys-outline-checkbox .checkmark:after {
+  left: 6px !important;
+  top: 2px !important;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
 .sys-checkbox .checkmark {
   border: 1px solid #6c757d;
 }
@@ -790,7 +808,6 @@
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -861,7 +878,6 @@
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1115,7 +1131,6 @@
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1185,7 +1200,6 @@
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
