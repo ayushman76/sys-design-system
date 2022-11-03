@@ -785,8 +785,8 @@
 }
 
 [size=sm].sys-outline-checkbox .checkmark, [size=sm].sys-checkbox .checkmark {
-  padding: 0px 9px !important;
-  font-size: initial;
+  padding: 3px 9px !important;
+  font-size: x-small;
 }
 [size=sm].sys-checkbox .checkmark:after, [size=sm].sys-outline-checkbox .checkmark:after {
   left: 6px !important;
