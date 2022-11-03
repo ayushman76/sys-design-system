@@ -780,6 +780,182 @@
   color: white;
 }
 
+.sys-checkbox .checkmark {
+  border: 1px solid #6c757d;
+}
+
+.sys-checkbox, .sys-outline-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sys-checkbox .checkmark:after, .sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.sys-checkbox .checkmark, .sys-outline-checkbox .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 33px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 0px 13px;
+}
+.sys-checkbox .checkmark:after, .sys-outline-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.sys-checkbox input, .sys-outline-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.sys-checkbox input[type=checkbox]:checked ~ .checkmark:after, .sys-outline-checkbox input[type=checkbox]:checked ~ .checkmark:after {
+  display: block;
+}
+.sys-checkbox .checkmark:after, .sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.sys-checkbox.checkbox-accent .checkmark, .sys-outline-checkbox.checkbox-accent .checkmark {
+  border: 1px solid #304FFE;
+}
+.sys-checkbox.checkbox-olive .checkmark, .sys-outline-checkbox.checkbox-olive .checkmark {
+  border: 1px solid #5FD855;
+}
+.sys-checkbox.checkbox-alert .checkmark, .sys-outline-checkbox.checkbox-alert .checkmark {
+  border: 1px solid #FFB800;
+}
+.sys-checkbox.checkbox-error .checkmark, .sys-outline-checkbox.checkbox-error .checkmark {
+  border: 1px solid #C73E1D;
+}
+.sys-checkbox.checkbox-secondary .checkmark, .sys-outline-checkbox.checkbox-secondary .checkmark {
+  border: 1px solid #6c757d;
+}
+
+.sys-outline-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.sys-outline-checkbox .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 33px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 0px 13px;
+}
+.sys-outline-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.sys-outline-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.sys-outline-checkbox input[type=checkbox]:checked ~ .checkmark:after {
+  display: block;
+}
+.sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.sys-outline-checkbox {
+  /* checkbox hover and checked effect */
+}
+.sys-outline-checkbox.checkbox-accent:hover input ~ .checkmark {
+  background: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(48, 79, 254, 0.6));
+}
+.sys-outline-checkbox.checkbox-olive:hover input ~ .checkmark {
+  background: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(95, 216, 85, 0.4));
+}
+.sys-outline-checkbox.checkbox-alert:hover input ~ .checkmark {
+  background: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(255, 184, 0, 0.25));
+}
+.sys-outline-checkbox.checkbox-error:hover input ~ .checkmark {
+  background: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(199, 62, 29, 0.45));
+}
+.sys-outline-checkbox.checkbox-secondary:hover input ~ .checkmark {
+  background: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(108, 117, 125, 0.4));
+}
+
+.sys-checkbox.checkbox-accent input:checked ~ .checkmark {
+  background-color: #304FFE;
+  filter: drop-shadow(0px 4px 4px rgba(48, 79, 254, 0.6));
+}
+.sys-checkbox.checkbox-olive input:checked ~ .checkmark {
+  background-color: #5FD855;
+  filter: drop-shadow(0px 4px 4px rgba(95, 216, 85, 0.4));
+}
+.sys-checkbox.checkbox-alert input:checked ~ .checkmark {
+  background-color: #FFB800;
+  filter: drop-shadow(0px 4px 4px rgba(255, 184, 0, 0.25));
+}
+.sys-checkbox.checkbox-error input:checked ~ .checkmark {
+  background-color: #C73E1D;
+  filter: drop-shadow(0px 4px 4px rgba(199, 62, 29, 0.45));
+}
+.sys-checkbox.checkbox-secondary input:checked ~ .checkmark {
+  background: #6c757d;
+  filter: drop-shadow(0px 4px 4px rgba(108, 117, 125, 0.4));
+}
+
 .dark-theme {
   background-color: #303030;
   color: white;
@@ -932,4 +1108,129 @@
   color: white;
   line-height: 20px;
   margin-bottom: 10px;
+}
+.dark-theme .sys-checkbox, .dark-theme .sys-outline-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dark-theme .sys-checkbox .checkmark:after, .dark-theme .sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.dark-theme .sys-checkbox .checkmark, .dark-theme .sys-outline-checkbox .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 33px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 0px 13px;
+}
+.dark-theme .sys-checkbox .checkmark:after, .dark-theme .sys-outline-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.dark-theme .sys-checkbox input, .dark-theme .sys-outline-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.dark-theme .sys-checkbox input[type=checkbox]:checked ~ .checkmark:after, .dark-theme .sys-outline-checkbox input[type=checkbox]:checked ~ .checkmark:after {
+  display: block;
+}
+.dark-theme .sys-checkbox .checkmark:after, .dark-theme .sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.dark-theme .sys-checkbox.checkbox-accent .checkmark, .dark-theme .sys-outline-checkbox.checkbox-accent .checkmark {
+  border: 1px solid #304FFE;
+}
+.dark-theme .sys-checkbox.checkbox-olive .checkmark, .dark-theme .sys-outline-checkbox.checkbox-olive .checkmark {
+  border: 1px solid #5FD855;
+}
+.dark-theme .sys-checkbox.checkbox-alert .checkmark, .dark-theme .sys-outline-checkbox.checkbox-alert .checkmark {
+  border: 1px solid #FFB800;
+}
+.dark-theme .sys-checkbox.checkbox-error .checkmark, .dark-theme .sys-outline-checkbox.checkbox-error .checkmark {
+  border: 1px solid #C73E1D;
+}
+.dark-theme .sys-checkbox.checkbox-secondary .checkmark, .dark-theme .sys-outline-checkbox.checkbox-secondary .checkmark {
+  border: 1px solid #6c757d;
+}
+.dark-theme .sys-outline-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.dark-theme .sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.dark-theme .sys-outline-checkbox .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 33px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 0px 13px;
+}
+.dark-theme .sys-outline-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.dark-theme .sys-outline-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.dark-theme .sys-outline-checkbox input[type=checkbox]:checked ~ .checkmark:after {
+  display: block;
+}
+.dark-theme .sys-outline-checkbox .checkmark:after {
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }/*# sourceMappingURL=style.css.map */
