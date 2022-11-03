@@ -652,7 +652,7 @@ $gray:#292929;
 [size="sm"]{
     &.sys-outline-checkbox .checkmark, &.sys-checkbox .checkmark{
         padding: 3px 9px !important;
-        font-size: x-small;
+        font-size: smaller;
     }
     &.sys-checkbox .checkmark:after, &.sys-outline-checkbox .checkmark:after {
         left: 6px !important;
