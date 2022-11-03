@@ -1,3 +1,14 @@
+/* SYS DESIGN SYSTEM (VERSION - V.0.1 - beta)
+  
+It will help us to build a web pages, 
+its low time consistance,  easy to use, 
+basic and standard class name it helping to code faster.
+
+*/
+
+
+@import url(./layout/grid/sys.grid.css);
+@import url(./layout/container/sys-container.css);
 * {
   margin: 0;
   padding: 0;
