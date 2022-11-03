@@ -654,12 +654,21 @@ $gray:#292929;
         padding: 3px 9px !important;
         font-size: smaller;
     }
-    &.sys-checkbox .checkmark:after, &.sys-outline-checkbox .checkmark:after {
+    &.sys-outline-checkbox .checkmark:after{
+        border: solid black;
         left: 6px !important;
         top: 2px !important;
         width: 5px;
         height: 10px;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+    &.sys-checkbox .checkmark:after{
         border: solid white;
+        left: 6px !important;
+        top: 2px !important;
+        width: 5px;
+        height: 10px;
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
     }
