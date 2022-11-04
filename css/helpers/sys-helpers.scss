@@ -1,0 +1,33 @@
+@use "../variables/variable";
+@use "sass:map";
+
+
+
+// SYS COLOR THEMEPALET
+
+$systheme-colors: (
+  "accent": variable.$accent-100,
+  "olive": variable.$olive-100,
+  "alert": variable.$alert-100,
+  "error": variable.$error-100,
+  "secondary": variable.$secondary-100,
+  "dark": variable.$dark-100,
+  "light": variable.$light-100,
+);
+
+.text-accent{color: map.get($systheme-colors, "accent");}
+.text-olive{color: map.get($systheme-colors, "olive");}
+.text-alert{color: map.get($systheme-colors, "alert");}
+.text-error{color: map.get($systheme-colors, "error");}
+.text-secondary{color: map.get($systheme-colors, "secondary");}
+.text-dark{color: map.get($systheme-colors, "dark");}
+.text-light{color: map.get($systheme-colors, "light");}
+
+
+.bg-accent{background-color: map.get($systheme-colors, "accent");}
+.bg-olive{background-color: map.get($systheme-colors, "olive");}
+.bg-alert{background-color: map.get($systheme-colors, "alert");}
+.bg-error{background-color: map.get($systheme-colors, "error");}
+.bg-secondary{background-color: map.get($systheme-colors, "secondary");}
+.bg-dark{background-color: map.get($systheme-colors, "dark");}
+.bg-light{background-color: map.get($systheme-colors, "light");}

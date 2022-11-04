@@ -1,0 +1,55 @@
+.text-accent {
+  color: #304FFE;
+}
+
+.text-olive {
+  color: #5FD855;
+}
+
+.text-alert {
+  color: #FFB800;
+}
+
+.text-error {
+  color: #C73E1D;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-dark {
+  color: #303030;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.bg-accent {
+  background-color: #304FFE;
+}
+
+.bg-olive {
+  background-color: #5FD855;
+}
+
+.bg-alert {
+  background-color: #FFB800;
+}
+
+.bg-error {
+  background-color: #C73E1D;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.bg-dark {
+  background-color: #303030;
+}
+
+.bg-light {
+  background-color: #ffffff;
+}/*# sourceMappingURL=sys-helpers.css.map */
