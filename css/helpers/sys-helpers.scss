@@ -1,7 +1,18 @@
 @use "../variables/variable";
 @use "sass:map";
 
+// clearfix
+@mixin clearfix() {
+    &::after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+ }
 
+ .clearfix{
+    @include clearfix();
+ }
 
 // SYS COLOR THEMEPALET
 
@@ -15,19 +26,38 @@ $systheme-colors: (
   "light": variable.$light-100,
 );
 
-.text-accent{color: map.get($systheme-colors, "accent");}
-.text-olive{color: map.get($systheme-colors, "olive");}
-.text-alert{color: map.get($systheme-colors, "alert");}
-.text-error{color: map.get($systheme-colors, "error");}
-.text-secondary{color: map.get($systheme-colors, "secondary");}
-.text-dark{color: map.get($systheme-colors, "dark");}
-.text-light{color: map.get($systheme-colors, "light");}
+.text-accent, a.text-accent{color: map.get($systheme-colors, "accent");}
+.text-olive , a.text-olive{color: map.get($systheme-colors, "olive");}
+.text-alert, a.text-alert{color: map.get($systheme-colors, "alert");}
+.text-error, a.text-error{color: map.get($systheme-colors, "error");}
+.text-secondary, a.text-secondary{color: map.get($systheme-colors, "secondary");}
+.text-dark a.text-dark{color: map.get($systheme-colors, "dark");}
+.text-light, a.text-light{color: map.get($systheme-colors, "light");}
 
 
-.bg-accent{background-color: map.get($systheme-colors, "accent");}
-.bg-olive{background-color: map.get($systheme-colors, "olive");}
-.bg-alert{background-color: map.get($systheme-colors, "alert");}
-.bg-error{background-color: map.get($systheme-colors, "error");}
-.bg-secondary{background-color: map.get($systheme-colors, "secondary");}
-.bg-dark{background-color: map.get($systheme-colors, "dark");}
+.bg-accent{
+        background-color: map.get($systheme-colors, "accent");
+        color: map.get($systheme-colors, "light") !important;
+}
+.bg-olive{
+        background-color: map.get($systheme-colors, "olive");
+        color: map.get($systheme-colors, "light") !important;
+}
+.bg-alert{
+        background-color: map.get($systheme-colors, "alert");
+        color: map.get($systheme-colors, "light") !important;
+       
+}
+.bg-error{
+        background-color: map.get($systheme-colors, "error");
+        color: map.get($systheme-colors, "light") !important;
+}
+.bg-secondary{
+        background-color: map.get($systheme-colors, "secondary");
+        color: map.get($systheme-colors, "light") !important;
+}
+.bg-dark{
+        background-color: map.get($systheme-colors, "dark");
+        color: map.get($systheme-colors, "light") !important;
+}
 .bg-light{background-color: map.get($systheme-colors, "light");}

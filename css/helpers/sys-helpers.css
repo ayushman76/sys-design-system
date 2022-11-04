@@ -1,53 +1,65 @@
-.text-accent {
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.text-accent, a.text-accent {
   color: #304FFE;
 }
 
-.text-olive {
+.text-olive, a.text-olive {
   color: #5FD855;
 }
 
-.text-alert {
+.text-alert, a.text-alert {
   color: #FFB800;
 }
 
-.text-error {
+.text-error, a.text-error {
   color: #C73E1D;
 }
 
-.text-secondary {
+.text-secondary, a.text-secondary {
   color: #6c757d;
 }
 
-.text-dark {
+.text-dark a.text-dark {
   color: #303030;
 }
 
-.text-light {
+.text-light, a.text-light {
   color: #ffffff;
 }
 
 .bg-accent {
   background-color: #304FFE;
+  color: #ffffff !important;
 }
 
 .bg-olive {
   background-color: #5FD855;
+  color: #ffffff !important;
 }
 
 .bg-alert {
   background-color: #FFB800;
+  color: #ffffff !important;
 }
 
 .bg-error {
   background-color: #C73E1D;
+  color: #ffffff !important;
 }
 
 .bg-secondary {
   background-color: #6c757d;
+  color: #ffffff !important;
 }
 
 .bg-dark {
   background-color: #303030;
+  color: #ffffff !important;
 }
 
 .bg-light {
