@@ -32,8 +32,8 @@
 
 .sys-row .col-md-2, .sys-row .col-md-3, .sys-row .col-md-4, .sys-row .col-md-5, .sys-row .col-md-6 {
   float: left;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
   margin: 0.5rem 0;
 }
 .sys-row .col-md-2 {

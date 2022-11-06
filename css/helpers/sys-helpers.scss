@@ -15,7 +15,6 @@
  }
 
 // SYS COLOR THEMEPALET
-
 $systheme-colors: (
   "accent": variable.$accent-100,
   "olive": variable.$olive-100,
@@ -61,3 +60,6 @@ $systheme-colors: (
         color: map.get($systheme-colors, "light") !important;
 }
 .bg-light{background-color: map.get($systheme-colors, "light");}
+
+
+// positions 
