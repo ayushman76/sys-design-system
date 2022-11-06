@@ -4,7 +4,7 @@
 // clearfix
 @mixin clearfix() {
     &::after {
-      display: block;
+      display: table;
       clear: both;
       content: "";
     }
@@ -33,7 +33,7 @@ $systheme-colors: (
 .text-dark a.text-dark{color: map.get($systheme-colors, "dark");}
 .text-light, a.text-light{color: map.get($systheme-colors, "light");}
 
-
+// Backgrounds 
 .bg-accent{
         background-color: map.get($systheme-colors, "accent");
         color: map.get($systheme-colors, "light") !important;
@@ -63,3 +63,10 @@ $systheme-colors: (
 
 
 // positions 
+
+.sticky-top{position: sticky;top: 0;}
+.sticky-bottom{position: sticky;bottom: 0;}
+.absolute{position: absolute;}
+.relative{position: relative;}
+.fixed-top{position: fixed; top: 0;}
+.fixed-bottom{position: fixed; bottom: 0;}
