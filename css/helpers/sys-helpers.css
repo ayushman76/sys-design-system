@@ -404,6 +404,9 @@
   background-color: #303030;
   color: #ffffff !important;
 }
+.bg-dark button, .bg-dark a {
+  color: white;
+}
 
 .bg-dark-90 {
   background-color: rgba(48, 48, 48, 0.9);

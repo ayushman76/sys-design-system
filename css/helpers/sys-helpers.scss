@@ -186,7 +186,10 @@ $systheme-colors: (
 .bg-secondary-65{background-color: map.get($systheme-colors, "secondary-65");color: map.get($systheme-colors, "light") !important;}
 .bg-secondary-60{background-color: map.get($systheme-colors, "secondary-60");color: map.get($systheme-colors, "light") !important;}
 
-.bg-dark{background-color: map.get($systheme-colors, "dark");color: map.get($systheme-colors, "light") !important;}
+.bg-dark{background-color: map.get($systheme-colors, "dark");color: map.get($systheme-colors, "light") !important;
+   button,a{
+      color: white;
+   }}
 .bg-dark-90{background-color: map.get($systheme-colors, "dark-90");color: map.get($systheme-colors, "light") !important;}
 .bg-dark-85{background-color: map.get($systheme-colors, "dark-85");color: map.get($systheme-colors, "light") !important;}
 .bg-dark-80{background-color: map.get($systheme-colors, "dark-80");color: map.get($systheme-colors, "light") !important;}
@@ -205,3 +208,4 @@ $systheme-colors: (
 .relative{position: relative;}
 .fixed-top{position: fixed; top: 0;}
 .fixed-bottom{position: fixed; bottom: 0;}
+
