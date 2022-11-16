@@ -935,9 +935,7 @@
   transform: rotate(45deg);
 }
 
-.sys-outline-checkbox {
-  /* checkbox hover and checked effect */
-}
+
 .sys-outline-checkbox.checkbox-accent:hover input ~ .checkmark {
   background: transparent;
   filter: drop-shadow(0px 4px 4px rgba(48, 79, 254, 0.6));
